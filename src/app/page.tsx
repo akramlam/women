@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { engineeringFields } from "@/data/engineering-fields";
 import { ArrowRight, Users, GraduationCap, Building } from "lucide-react";
 import Link from "next/link";
+import { PodcastSection } from "@/components/podcast-section";
 
 const stats = [
   {
@@ -33,7 +34,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-foreground bg-clip-text text-transparent">
-              Femmes Ingénieures au Maroc
+              Ingenieu&apos;seLand
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Découvrez les parcours inspirants des femmes dans l&apos;ingénierie et rejoignez la nouvelle génération d&apos;innovatrices
@@ -128,6 +129,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Add the podcast section */}
+      <PodcastSection />
     </div>
   );
 }

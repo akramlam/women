@@ -6,8 +6,20 @@ import { ArrowLeft, Briefcase, School, Trophy, Users } from "lucide-react";
 import Link from "next/link";
 import { fieldsData } from "@/data/engineering-fields";
 
+// Helper function to create URL-friendly slugs
+function createSlug(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Remove accents
+    .replace(/[^\w\s-]/g, '') // Remove special characters
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .trim();
+}
+
 export default function DomainePage({ params }: { params: { slug: string } }) {
-  const fieldData = fieldsData[params.slug];
+  const domain = params.slug;
+  const fieldData = fieldsData[domain];
 
   if (!fieldData) {
     notFound();
@@ -41,7 +53,7 @@ export default function DomainePage({ params }: { params: { slug: string } }) {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Taux d'emploi</p>
+              <p>Taux d&apos;emploi</p>
             </CardContent>
           </Card>
           <Card className="text-center">
@@ -66,25 +78,35 @@ export default function DomainePage({ params }: { params: { slug: string } }) {
           </Card>
         </div>
 
-        {/* Opportunities */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Briefcase className="w-5 h-5 text-primary" />
-              Débouchés Professionnels
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {fieldData.opportunities.map((opp, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 rounded-lg bg-secondary/5">
-                  <Badge variant="outline">{index + 1}</Badge>
-                  <span>{opp}</span>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+        {/* Career Opportunities Section */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold mb-6">Débouchés Professionnels</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {fieldData.opportunities.map((opportunity, index) => {
+              const careerSlug = createSlug(opportunity);
+              return (
+                <Link 
+                  key={index}
+                  href={`/domaine/${domain}/carriere?career=${careerSlug}`}
+                >
+                  <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1">
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Briefcase className="w-5 h-5" />
+                        {opportunity}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Découvrez le parcours et les compétences requises
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
 
         {/* Schools */}
         <Card className="mb-8">
@@ -137,7 +159,7 @@ export default function DomainePage({ params }: { params: { slug: string } }) {
                     </div>
                   </div>
                   <p className="text-muted-foreground italic">
-                    "{story.achievement}"
+                    &quot;{story.achievement}&quot;
                   </p>
                 </div>
               ))}

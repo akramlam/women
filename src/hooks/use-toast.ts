@@ -25,14 +25,14 @@ const actionTypes = {
   REMOVE_TOAST: "REMOVE_TOAST",
 } as const
 
+type ActionType = typeof actionTypes
+
 let count = 0
 
 function genId() {
   count = (count + 1) % Number.MAX_SAFE_INTEGER
   return count.toString()
 }
-
-type ActionType = typeof actionTypes
 
 type Action =
   | {
@@ -134,10 +134,15 @@ const listeners: Array<(state: State) => void> = []
 let memoryState: State = { toasts: [] }
 
 function dispatch(action: Action) {
-  memoryState = reducer(memoryState, action)
-  listeners.forEach((listener) => {
-    listener(memoryState)
-  })
+  if (action.type === actionTypes.ADD_TOAST || 
+      action.type === actionTypes.UPDATE_TOAST || 
+      action.type === actionTypes.DISMISS_TOAST || 
+      action.type === actionTypes.REMOVE_TOAST) {
+    memoryState = reducer(memoryState, action)
+    listeners.forEach((listener) => {
+      listener(memoryState)
+    })
+  }
 }
 
 type Toast = Omit<ToasterToast, "id">
