@@ -60,7 +60,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Éducation</h3>
                 <p className="text-muted-foreground">
-                  Fournir des ressources pédagogiques adaptées aux différents domaines de l'ingénierie
+                  Fournir des ressources pédagogiques adaptées aux différents domaines de l&apos;ingénierie
                 </p>
               </CardContent>
             </Card>
@@ -72,7 +72,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Excellence</h3>
                 <p className="text-muted-foreground">
-                  Promouvoir l'excellence et l'innovation dans tous les domaines de l'ingénierie
+                  Promouvoir l&apos;excellence et l&apos;innovation dans tous les domaines de l&apos;ingénierie
                 </p>
               </CardContent>
             </Card>
@@ -87,13 +87,13 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Notre Histoire</h2>
               <p className="text-muted-foreground mb-4">
-                Fondée en 2022, notre plateforme est née d'un constat simple : les femmes sont encore sous-représentées dans les filières d'ingénierie au Maroc, malgré leur talent et leur potentiel.
+                Fondée en 2022, notre plateforme est née d&apos;un constat simple : les femmes sont encore sous-représentées dans les filières d&apos;ingénierie au Maroc, malgré leur talent et leur potentiel.
               </p>
               <p className="text-muted-foreground mb-4">
-                Notre équipe, composée d'ingénieures passionnées et d'experts en éducation, s'est donnée pour mission de changer cette réalité en créant un écosystème complet d'information, de formation et de mise en réseau.
+                Notre équipe, composée d&apos;ingénieures passionnées et d&apos;experts en éducation, s&apos;est donnée pour mission de changer cette réalité en créant un écosystème complet d&apos;information, de formation et de mise en réseau.
               </p>
               <p className="text-muted-foreground">
-                Aujourd'hui, nous accompagnons des milliers d'étudiantes et de professionnelles dans leur parcours, contribuant ainsi à façonner un avenir où la diversité est synonyme d'innovation.
+                Aujourd&apos;hui, nous accompagnons des milliers d&apos;étudiantes et de professionnelles dans leur parcours, contribuant ainsi à façonner un avenir où la diversité est synonyme d&apos;innovation.
               </p>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
@@ -127,7 +127,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Inclusion</h3>
                 <p className="text-muted-foreground">
-                  Nous croyons en la force de la diversité et nous nous engageons à créer un environnement où chacune peut s'épanouir, quels que soient son origine, son parcours ou ses convictions.
+                  Nous croyons en la force de la diversité et nous nous engageons à créer un environnement où chacune peut s&apos;épanouir, quels que soient son origine, son parcours ou ses convictions.
                 </p>
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Innovation</h3>
                 <p className="text-muted-foreground">
-                  Nous encourageons la créativité et l'esprit d'innovation, essentiels pour relever les défis complexes de notre monde en constante évolution.
+                  Nous encourageons la créativité et l&apos;esprit d&apos;innovation, essentiels pour relever les défis complexes de notre monde en constante évolution.
                 </p>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Collaboration</h3>
                 <p className="text-muted-foreground">
-                  Nous favorisons l'entraide et le partage de connaissances, convaincus que le succès collectif repose sur la force de notre communauté.
+                  Nous favorisons l&apos;entraide et le partage de connaissances, convaincus que le succès collectif repose sur la force de notre communauté.
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Excellence</h3>
                 <p className="text-muted-foreground">
-                  Nous visons l'excellence dans tout ce que nous entreprenons, en offrant des ressources et des services de la plus haute qualité.
+                  Nous visons l&apos;excellence dans tout ce que nous entreprenons, en offrant des ressources et des services de la plus haute qualité.
                 </p>
               </div>
             </div>
