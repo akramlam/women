@@ -4,26 +4,26 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Users, Award, BookOpen, Heart, Sparkles, CheckCircle2, Globe, Lightbulb } from "lucide-react";
 
-const teamMembers = [
-  {
-    name: "Fatima Zahra",
-    role: "Fondatrice & CEO",
-    bio: "Ingénieure en informatique avec 10 ans d'expérience dans le développement de solutions technologiques pour l'éducation.",
-    image: "/team/fatima.jpg"
-  },
-  {
-    name: "Nadia Fathi",
-    role: "Directrice Pédagogique",
-    bio: "Docteure en sciences de l'éducation, spécialisée dans les parcours d'apprentissage pour les femmes en STEM.",
-    image: "/team/nadia.jpg"
-  },
-  {
-    name: "Salma Bennani",
-    role: "Responsable Partenariats",
-    bio: "MBA en gestion d'entreprise, elle développe des relations avec les écoles d'ingénieurs et les entreprises du secteur.",
-    image: "/team/salma.jpg"
-  }
-];
+// const teamMembers = [
+//   {
+//     name: "Fatima Zahra",
+//     role: "Fondatrice & CEO",
+//     bio: "Ingénieure en informatique avec 10 ans d'expérience dans le développement de solutions technologiques pour l'éducation.",
+//     image: "/team/fatima.jpg"
+//   },
+//   {
+//     name: "Nadia Fathi",
+//     role: "Directrice Pédagogique",
+//     bio: "Docteure en sciences de l'éducation, spécialisée dans les parcours d'apprentissage pour les femmes en STEM.",
+//     image: "/team/nadia.jpg"
+//   },
+//   {
+//     name: "Salma Bennani",
+//     role: "Responsable Partenariats",
+//     bio: "MBA en gestion d'entreprise, elle développe des relations avec les écoles d'ingénieurs et les entreprises du secteur.",
+//     image: "/team/salma.jpg"
+//   }
+// ];
 
 export default function AboutPage() {
   return (
