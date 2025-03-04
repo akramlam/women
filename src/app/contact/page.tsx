@@ -173,7 +173,7 @@ export default function ContactPage() {
             <CardHeader>
               <CardTitle>Informations de contact</CardTitle>
               <CardDescription>
-                Etudiante en Genie Mecanique option Energetique a l&apos;ENSAM de Meknes
+                Ennour Dina, Etudiante en Genie Mecanique option Energetique a l&apos;ENSAM de Meknes
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
