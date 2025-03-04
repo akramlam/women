@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, BookOpen, Trophy, Wallet, Briefcase, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { RoadmapTimeline } from "@/components/roadmap-timeline";
-import { PodcastList } from "@/components/podcast-list";
+// import { PodcastList } from "@/components/podcast-list";
 
 // Remove the custom Props type and use the correct parameter typing
 export default function CareerPage({
@@ -169,7 +169,7 @@ export default function CareerPage({
         </div>
 
         {/* Add podcast list */}
-        {career.podcasts && <PodcastList podcasts={career.podcasts} />}
+        {/* {career.podcasts && <PodcastList podcasts={career.podcasts} />} */}
       </div>
     </div>
   );

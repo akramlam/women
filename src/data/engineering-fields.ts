@@ -93,6 +93,12 @@ export const engineeringFields = [
     description: "Optimisation des processus, logistique et qualité",
     icon: "🏭",
     slug: "industriel"
+  },
+  {
+    title: "Génie Energétique",
+    description: "Production et distribution d'énergie, énergies renouvelables et économies d'énergie",
+    icon: "🔋",
+    slug: "energetique"
   }
 ];
 
@@ -2500,5 +2506,246 @@ export const fieldsData: Record<string, FieldData> = {
       }
     }
   },
-  // Add other fields similarly...
+  "energetique": {
+    title: "Génie Énergétique",
+    description: "Le génie énergétique se concentre sur la conception, l'optimisation et la gestion des systèmes de production, de distribution et d'utilisation de l'énergie, avec un accent particulier sur les énergies renouvelables et l'efficacité énergétique.",
+    stats: {
+      employmentRate: "94%",
+      averageSalary: "12 000 - 18 000 MAD",
+      femalePercentage: "28%"
+    },
+    opportunities: [
+      "Ingénieure en Efficacité Énergétique",
+      "Conceptrice de Systèmes Solaires",
+      "Spécialiste en Énergie Éolienne",
+      "Consultante en Transition Énergétique",
+      "Responsable de Projets Énergies Renouvelables",
+      "Ingénieure en Réseaux Intelligents"
+    ],
+    rankings: [
+      {
+        rank: 1,
+        school: "École Nationale Supérieure d'Électricité et de Mécanique (ENSEM)",
+        details: "Casablanca - Formation reconnue pour son excellence en génie énergétique et automatisation"
+      },
+      {
+        rank: 2,
+        school: "École Mohammadia d'Ingénieurs (EMI)",
+        details: "Rabat - Programme spécialisé en énergies renouvelables et efficacité énergétique"
+      },
+      {
+        rank: 3,
+        school: "Institut National des Sciences Appliquées (INSA)",
+        details: "Fès - Formation axée sur l'innovation en génie énergétique et développement durable"
+      },
+      {
+        rank: 4,
+        school: "École Nationale des Sciences Appliquées (ENSA)",
+        details: "Marrakech - Spécialisation en systèmes énergétiques et énergies renouvelables"
+      },
+      {
+        rank: 5,
+        school: "Université Internationale de Rabat (UIR)",
+        details: "Rabat - Programme en partenariat avec des entreprises du secteur énergétique"
+      }
+    ],
+    successStories: [
+      {
+        name: "Leila Benali",
+        role: "Directrice de Projets Énergétiques",
+        company: "MASEN (Moroccan Agency for Sustainable Energy)",
+        achievement: "J'ai dirigé l'implémentation de la plus grande centrale solaire d'Afrique à Ouarzazate, contribuant à la stratégie nationale d'énergies renouvelables du Maroc."
+      },
+      {
+        name: "Samira Ouadghiri",
+        role: "Fondatrice",
+        company: "EcoEnergy Solutions",
+        achievement: "Après mes études en génie énergétique, j'ai créé ma startup spécialisée dans l'audit énergétique pour les entreprises, permettant des économies d'énergie de 30% en moyenne pour nos clients."
+      },
+      {
+        name: "Nadia El Mrabet",
+        role: "Chercheuse en Énergies Renouvelables",
+        company: "Institut de Recherche en Énergie Solaire et Énergies Nouvelles (IRESEN)",
+        achievement: "Mes recherches sur les matériaux photovoltaïques ont contribué au développement de panneaux solaires plus efficaces et adaptés au climat nord-africain."
+      }
+    ],
+    careers: {
+      "ingenieure-efficacite-energetique": {
+        title: "Ingénieure en Efficacité Énergétique",
+        description: "Spécialiste qui analyse, conçoit et implémente des solutions pour optimiser la consommation d'énergie dans les bâtiments, les processus industriels et les systèmes énergétiques.",
+        salary: {
+          entry: "8 000 - 12 000 MAD",
+          mid: "12 000 - 18 000 MAD",
+          senior: "18 000 - 25 000 MAD"
+        },
+        requirements: [
+          "Diplôme d'ingénieur en génie énergétique, génie électrique ou mécanique",
+          "Connaissance des normes d'efficacité énergétique et des réglementations thermiques",
+          "Maîtrise des outils de simulation énergétique (TRNSYS, EnergyPlus)",
+          "Compétences en audit énergétique et en analyse de données",
+          "Certification en efficacité énergétique (un atout)"
+        ],
+        roadmap: [
+          {
+            title: "Formation Initiale",
+            description: "Diplôme d'ingénieur en génie énergétique ou domaine connexe",
+            duration: "5 ans",
+            subjects: [],
+            skills: []
+          },
+          {
+            title: "Certification Professionnelle",
+            description: "Obtention de certifications en audit énergétique ou gestion de l'énergie",
+            duration: "6 mois - 1 an",
+            subjects: [],
+            skills: []
+          },
+          {
+            title: "Expérience Junior",
+            description: "Poste d'ingénieure junior en bureau d'études ou entreprise de services énergétiques",
+            duration: "2-3 ans",
+            subjects: [],
+            skills: []
+          },
+          {
+            title: "Spécialisation",
+            description: "Développement d'expertise dans un secteur spécifique (bâtiment, industrie, transport)",
+            duration: "2-3 ans",
+            subjects: [],
+            skills: []
+          },
+          {
+            title: "Poste Senior",
+            description: "Responsable de projets d'efficacité énergétique ou consultante experte",
+            duration: "Après 5+ ans d'expérience",
+            subjects: [],
+            skills: []
+          }
+        ],
+        externalResources: {
+          roadmaps: [
+            {
+              title: "Guide de l'Efficacité Énergétique",
+              url: "https://www.ademe.fr/expertises/energie"
+            },
+            {
+              title: "Certification en Gestion de l'Énergie",
+              url: "https://www.iso.org/fr/iso-50001-energy-management.html"
+            }
+          ]
+        },
+        podcasts: [
+          {
+            title: "La Révolution de la Conception 3D",
+            description: "Discussion approfondie sur l'évolution des outils de CAO et leur impact sur l'industrie",
+            duration: "45:30",
+            url: "https://example.com/podcast/conception-3d",
+            host: "Sarah Bennani",
+            topics: [
+              "Évolution des outils CAO",
+              "Intégration de l'IA dans la conception",
+              "Futur de la conception mécanique"
+            ]
+          },
+          {
+            title: "Innovation en Ingénierie Mécanique",
+            description: "Les dernières tendances en conception mécanique et fabrication additive",
+            duration: "38:15",
+            url: "https://example.com/podcast/innovation-mecanique",
+            host: "Mohammed Alami",
+            topics: [
+              "Fabrication additive",
+              "Matériaux innovants",
+              "Simulation numérique"
+            ]
+          },
+          {
+            title: "Leïla Benali: Pionnière de la Transition Énergétique au Maroc",
+            description: "Leïla Benali est une ingénieure et experte en énergie et développement durable, qui a marqué le secteur par son expertise et son engagement. Ancienne ministre de la Transition énergétique et du Développement durable du Maroc, elle a joué un rôle clé dans l'élaboration et la mise en œuvre de la politique énergétique du pays. Elle a notamment contribué à faire du Maroc un leader en matière d'énergies renouvelables, notamment dans les domaines du solaire et de l'éolien. Sa vision stratégique et son leadership ont permis de renforcer la position du pays dans la transition énergétique mondiale. Son parcours incarne l'excellence et l'innovation, et elle est une source d'inspiration pour les femmes dans les secteurs scientifiques et technologiques.",
+            duration: "45 min",
+            url: "https://open.spotify.com/episode/6TBzYaIma2zb1WGuPml3Hv",
+            host: "Fatima Zahra",
+            topics: ["Transition Énergétique", "Leadership Féminin", "Énergies Renouvelables", "Politique Énergétique", "Développement Durable"]
+          }
+        ]
+      },
+      "conceptrice-systemes-solaires": {
+        title: "Conceptrice de Systèmes Solaires",
+        description: "Experte qui conçoit, dimensionne et optimise des installations solaires photovoltaïques et thermiques pour diverses applications résidentielles, commerciales ou industrielles.",
+        salary: {
+          entry: "9 000 - 13 000 MAD",
+          mid: "13 000 - 19 000 MAD",
+          senior: "19 000 - 28 000 MAD"
+        },
+        requirements: [
+          "Diplôme d'ingénieur en génie énergétique ou électrique",
+          "Connaissance approfondie des technologies solaires (PV et thermique)",
+          "Maîtrise des logiciels de conception solaire (PVsyst, SAM, PVSOL)",
+          "Compétences en dimensionnement électrique et mécanique",
+          "Connaissance des normes et réglementations solaires"
+        ],
+        roadmap: [
+          {
+            title: "Formation Académique",
+            description: "Diplôme d'ingénieur avec spécialisation en énergies renouvelables",
+            duration: "5 ans",
+            subjects: [],
+            skills: []
+          },
+          {
+            title: "Formation Technique Spécialisée",
+            description: "Formations sur les technologies solaires et logiciels de conception",
+            duration: "3-6 mois",
+            subjects: [],
+            skills: []
+          },
+          {
+            title: "Première Expérience",
+            description: "Poste d'ingénieure junior dans une entreprise d'énergie solaire",
+            duration: "1-2 ans",
+            subjects: [],
+            skills: []
+          },
+          {
+            title: "Développement d'Expertise",
+            description: "Participation à des projets solaires de plus grande envergure",
+            duration: "2-3 ans",
+            subjects: [],
+            skills: []
+          },
+          {
+            title: "Position Senior",
+            description: "Responsable de conception ou cheffe de projets solaires",
+            duration: "Après 5+ ans d'expérience",
+            subjects: [
+              "Gestion de projets solaires",
+              "Conception de systèmes solaires complexes",
+              "Optimisation des performances solaires",
+              "Gestion de l'équipe et des ressources",
+              "Gestion des relations clients"
+            ],
+            skills: [
+              "Gestion de projets solaires",
+              "Conception de systèmes solaires complexes",
+              "Optimisation des performances solaires",
+              "Gestion de l'équipe et des ressources",
+              "Gestion des relations clients"
+            ]
+          }
+        ],
+        externalResources: {
+          roadmaps: [
+            {
+              title: "Guide du Concepteur Photovoltaïque",
+              url: "https://www.ines-solaire.org/fr/formation/"
+            },
+            {
+              title: "Certification en Conception Solaire",
+              url: "https://www.nabcep.org/"
+            }
+          ]
+        }
+      }
+    }
+  }
 }; 

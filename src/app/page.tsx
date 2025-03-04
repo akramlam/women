@@ -40,7 +40,7 @@ export default function Home() {
               Découvrez les parcours inspirants des femmes dans l&apos;ingénierie et rejoignez la nouvelle génération d&apos;innovatrices
             </p>
             <div className="flex gap-4 justify-center">
-              <Link href="/about">
+              <Link href="/a-propos">
                 <Button size="lg" className="gap-2">
                   Découvrir <ArrowRight className="w-4 h-4" />
                 </Button>

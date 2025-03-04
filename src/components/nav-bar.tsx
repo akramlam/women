@@ -16,7 +16,7 @@ export function NavBar() {
         </Link>
         
         <div className="flex items-center gap-4">
-          <Link href="/about">
+          <Link href="/a-propos">
             <Button variant="ghost">À propos</Button>
           </Link>
           <Link href="/contact">
@@ -33,5 +33,5 @@ export function NavBar() {
         </div>
       </div>
     </nav>
-  )
-} 
+  );
+}

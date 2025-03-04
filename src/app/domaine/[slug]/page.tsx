@@ -17,6 +17,27 @@ function createSlug(text: string): string {
     .trim();
 }
 
+// Helper function to map opportunity titles to career slugs
+function getCareerSlug(domain: string, opportunity: string): string {
+  // For Génie Énergétique, map the opportunities to the correct career slugs
+  if (domain === 'energetique') {
+    const opportunityMap: Record<string, string> = {
+      "Ingénieure en Efficacité Énergétique": "ingenieure-efficacite-energetique",
+      "Conceptrice de Systèmes Solaires": "conceptrice-systemes-solaires",
+      // Add mappings for other opportunities as they are implemented
+      "Spécialiste en Énergie Éolienne": "ingenieure-efficacite-energetique", // Fallback for now
+      "Consultante en Transition Énergétique": "ingenieure-efficacite-energetique", // Fallback for now
+      "Responsable de Projets Énergies Renouvelables": "conceptrice-systemes-solaires", // Fallback for now
+      "Ingénieure en Réseaux Intelligents": "ingenieure-efficacite-energetique" // Fallback for now
+    };
+    
+    return opportunityMap[opportunity] || createSlug(opportunity);
+  }
+  
+  // For other domains, use the default slug creation
+  return createSlug(opportunity);
+}
+
 export default function DomainePage({ params }: { params: { slug: string } }) {
   const domain = params.slug;
   const fieldData = fieldsData[domain];
@@ -35,7 +56,7 @@ export default function DomainePage({ params }: { params: { slug: string } }) {
         </Link>
 
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16"> 
           <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-foreground bg-clip-text text-transparent">
             {fieldData.title}
           </h1>
@@ -83,7 +104,7 @@ export default function DomainePage({ params }: { params: { slug: string } }) {
           <h2 className="text-2xl font-bold mb-6">Débouchés Professionnels</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {fieldData.opportunities.map((opportunity, index) => {
-              const careerSlug = createSlug(opportunity);
+              const careerSlug = getCareerSlug(domain, opportunity);
               return (
                 <Link 
                   key={index}
