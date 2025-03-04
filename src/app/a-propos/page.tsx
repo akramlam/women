@@ -28,133 +28,138 @@ import { ArrowRight, Users, Award, BookOpen, Heart, Sparkles, CheckCircle2, Glob
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Full-width gradient background with overlapping elements */}
-      <section className="relative bg-gradient-to-br from-primary to-primary/9 pt-24 pb-40 ">
+      {/* Hero Section - Adjusted to prevent overlay issues */}
+      <section className="relative bg-gradient-to-br from-primary to-primary/9 pt-16 pb-48 md:pt-24 md:pb-56">
         <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,transparent,rgba(27, 25, 25, 0.8))]"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center text-white">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               Façonner l&apos;Avenir de l&apos;Ingénierie au Féminin
             </h1>
-            <p className="text-xl md:text-2xl opacity-90 mb-8">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl opacity-90 mb-6 md:mb-8">
               Notre mission est d&apos;inspirer, connecter et propulser la prochaine génération de femmes ingénieures au Maroc.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact">
-                <Button size="lg" variant="secondary" className="gap-2 text-primary font-medium">
+            <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
+              <Link href="/contact" className="w-full sm:w-auto">
+                <Button size="lg" variant="secondary" className="gap-2 text-primary font-medium w-full sm:w-auto">
                   Rejoignez-nous <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
-              <a href="#notre-histoire">
-                <Button size="lg" variant="outline" className="gap-2 bg-white/10 text-white border-white/20 hover:bg-white/20">
+              <a href="#notre-histoire" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="gap-2 bg-white/10 text-white border-white/20 hover:bg-white/20 w-full sm:w-auto">
                   Notre Histoire
                 </Button>
               </a>
             </div>
           </div>
         </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute -bottom-16 left-0 right-0">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="bg-card shadow-xl border-0">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full">
-                      <Globe className="h-8 w-8 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-2">Impact National</h3>
-                      <p className="text-muted-foreground">
-                        Présentes dans 12 villes et 24 établissements d&apos;enseignement supérieur au Maroc
-                      </p>
-                    </div>
+      </section>
+      
+      {/* Cards Section - Moved to its own section to fix overlay */}
+      <section className="py-8 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 -mt-32 md:-mt-24 relative z-20">
+            <Card className="bg-card shadow-xl border-0">
+              <CardContent className="p-4 md:p-8">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-primary/10 p-2 md:p-3 rounded-full">
+                    <Globe className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                   </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-card shadow-xl border-0 md:translate-y-4">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full">
-                      <Users className="h-8 w-8 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-2">Communauté</h3>
-                      <p className="text-muted-foreground">
-                        Plus de 5,000 membres actifs et un réseau de 200+ mentors professionnels
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="text-base md:text-xl font-bold mb-1 md:mb-2">Impact National</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">
+                      Présentes dans 12 villes et 24 établissements d&apos;enseignement supérieur au Maroc
+                    </p>
                   </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-card shadow-xl border-0 md:translate-y-8">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full">
-                      <Lightbulb className="h-8 w-8 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-2">Innovation</h3>
-                      <p className="text-muted-foreground">
-                        15 projets d&apos;innovation lancés par des femmes ingénieures accompagnées
-                      </p>
-                    </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-card shadow-xl border-0">
+              <CardContent className="p-4 md:p-8">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-primary/10 p-2 md:p-3 rounded-full">
+                    <Users className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                  <div>
+                    <h3 className="text-base md:text-xl font-bold mb-1 md:mb-2">Communauté</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">
+                      Plus de 5,000 membres actifs et un réseau de 200+ mentors professionnels
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-card shadow-xl border-0 sm:col-span-2 md:col-span-1">
+              <CardContent className="p-4 md:p-8">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-primary/10 p-2 md:p-3 rounded-full">
+                    <Lightbulb className="h-6 w-6 md:h-8 md:w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-base md:text-xl font-bold mb-1 md:mb-2">Innovation</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">
+                      15 projets d&apos;innovation lancés par des femmes ingénieures accompagnées
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
       
-      {/* Mission Section - With visual elements */}
-      <section className="py-32 bg-background">
+      {/* Mission Section - Adjusted for mobile */}
+      <section className="py-20 md:py-32 bg-background mt-16 sm:mt-0">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
               <div>
-                <div className="inline-block bg-primary/10 px-4 py-2 rounded-full text-primary font-medium mb-6">
+                <div className="inline-block bg-primary/10 px-3 py-1 md:px-4 md:py-2 rounded-full text-primary font-medium mb-4 md:mb-6 text-sm md:text-base">
                   Notre Mission
                 </div>
-                <h2 className="text-4xl font-bold mb-6">Transformer le paysage de l&apos;ingénierie au Maroc</h2>
-                <p className="text-lg text-muted-foreground mb-8">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">Transformer le paysage de l&apos;ingénierie au Maroc</h2>
+                <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
                   Nous œuvrons pour un avenir où les femmes sont équitablement représentées dans tous les domaines de l&apos;ingénierie, apportant leur perspective unique et leur talent pour résoudre les défis complexes de notre société.
                 </p>
                 
-                <div className="space-y-4">
-                  <div className="flex gap-3">
-                    <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0" />
-                    <p><span className="font-medium">Éducation</span> - Fournir des ressources pédagogiques adaptées et accessibles</p>
+                <div className="space-y-3 md:space-y-4">
+                  <div className="flex gap-2 md:gap-3">
+                    <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <p className="text-sm md:text-base"><span className="font-medium">Éducation</span> - Fournir des ressources pédagogiques adaptées et accessibles</p>
                   </div>
-                  <div className="flex gap-3">
-                    <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0" />
-                    <p><span className="font-medium">Mentorat</span> - Connecter étudiantes et professionnelles expérimentées</p>
+                  <div className="flex gap-2 md:gap-3">
+                    <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <p className="text-sm md:text-base"><span className="font-medium">Mentorat</span> - Connecter étudiantes et professionnelles expérimentées</p>
                   </div>
-                  <div className="flex gap-3">
-                    <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0" />
-                    <p><span className="font-medium">Opportunités</span> - Faciliter l&apos;accès aux stages et emplois dans le secteur</p>
+                  <div className="flex gap-2 md:gap-3">
+                    <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <p className="text-sm md:text-base"><span className="font-medium">Opportunités</span> - Faciliter l&apos;accès aux stages et emplois dans le secteur</p>
                   </div>
                 </div>
               </div>
               
-              <div className="relative">
+              <div className="relative mt-8 md:mt-0">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <div className="w-full h-full bg-muted flex items-center justify-center">
-                    <Image src="/pexels-olia-danilevich-8145247.jpg" alt="Femmes ingénieures collaborant" width={800} height={500} />
-                    {/* <p className="text-muted-foreground">Image: Femmes ingénieures collaborant</p> */}
+                    <Image 
+                      src="/pexels-olia-danilevich-8145247.jpg" 
+                      alt="Femmes ingénieures collaborant" 
+                      width={800} 
+                      height={500}
+                      className="object-cover w-full h-full"
+                    />
                   </div>
                 </div>
-                <div className="absolute -bottom-8 -left-8 bg-card p-4 rounded-xl shadow-lg">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <Award className="h-10 w-10 text-primary" />
+                <div className="absolute -bottom-4 -left-4 md:-bottom-8 md:-left-8 bg-card p-3 md:p-4 rounded-xl shadow-lg">
+                  <div className="bg-primary/10 p-2 md:p-3 rounded-full">
+                    <Award className="h-6 w-6 md:h-10 md:w-10 text-primary" />
                   </div>
                 </div>
-                <div className="absolute -top-8 -right-8 bg-card p-4 rounded-xl shadow-lg">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <BookOpen className="h-10 w-10 text-primary" />
+                <div className="absolute -top-4 -right-4 md:-top-8 md:-right-8 bg-card p-3 md:p-4 rounded-xl shadow-lg">
+                  <div className="bg-primary/10 p-2 md:p-3 rounded-full">
+                    <BookOpen className="h-6 w-6 md:h-10 md:w-10 text-primary" />
                   </div>
                 </div>
               </div>
@@ -353,24 +358,24 @@ export default function AboutPage() {
         </div>
       </section>
       
-      {/* CTA Section - Gradient background */}
-      <section className="py-24 bg-gradient-to-br from-primary to-primary/9 text-white">
+      {/* CTA Section - Adjusted for mobile */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-primary to-primary/9 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
               Rejoignez Notre Mouvement
             </h2>
-            <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">
+            <p className="text-base md:text-xl opacity-90 mb-8 md:mb-10 max-w-2xl mx-auto">
               Ensemble, nous pouvons transformer le paysage de l&apos;ingénierie au Maroc et créer un avenir où les femmes ingénieures brillent par leur talent et leur innovation.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact">
-                <Button size="lg" variant="secondary" className="gap-2 text-primary font-medium">
+            <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
+              <Link href="/contact" className="w-full sm:w-auto">
+                <Button size="lg" variant="secondary" className="gap-2 text-primary font-medium w-full sm:w-auto">
                   Contactez-nous <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
-              <Link href="/">
-                <Button size="lg" variant="outline" className="gap-2 bg-white/10 text-white border-white/20 hover:bg-white/20">
+              <Link href="/" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="gap-2 bg-white/10 text-white border-white/20 hover:bg-white/20 w-full sm:w-auto">
                   Explorer les Domaines
                 </Button>
               </Link>

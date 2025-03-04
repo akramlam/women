@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
-import { Send, Loader2, CheckCircle } from "lucide-react"
+import { Send, Loader2, CheckCircle, Linkedin } from "lucide-react"
 
 export default function ContactPage() {
   const { toast } = useToast()
@@ -173,7 +173,7 @@ export default function ContactPage() {
             <CardHeader>
               <CardTitle>Informations de contact</CardTitle>
               <CardDescription>
-                Retrouvez-nous sur les réseaux sociaux ou contactez-nous directement.
+                Etudiante en Genie Mecanique option Energetique a l&apos;ENSAM de Meknes
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -196,14 +196,8 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-medium text-lg mb-2">Réseaux sociaux</h3>
                 <div className="flex space-x-4 mt-2">
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                    LinkedIn
-                  </a>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                    Twitter
-                  </a>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                    Instagram
+                  <a href="https://www.linkedin.com/in/ennoura-dina-6a5822308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Linkedin className="h-4 w-4" />
                   </a>
                 </div>
               </div>

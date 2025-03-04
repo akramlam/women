@@ -4,6 +4,7 @@ import { engineeringFields } from "@/data/engineering-fields";
 import { ArrowRight, Users, GraduationCap, Building } from "lucide-react";
 import Link from "next/link";
 import { PodcastSection } from "@/components/podcast-section";
+import { EbookSection } from "@/components/ebook-section";
 
 const stats = [
   {
@@ -130,8 +131,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Add the podcast section */}
+      {/* Podcast Section */}
       <PodcastSection />
+      
+      {/* eBook Section */}
+      <EbookSection />
     </div>
   );
 }
