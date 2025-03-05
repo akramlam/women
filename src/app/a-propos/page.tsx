@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Users, Award, BookOpen, Heart, Sparkles, CheckCircle2, Globe, Lightbulb } from "lucide-react";
+// import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight, Award, BookOpen, CheckCircle2 } from "lucide-react";
 
 // const teamMembers = [
 //   {
