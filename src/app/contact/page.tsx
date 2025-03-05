@@ -180,8 +180,8 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-medium text-lg mb-2">Adresse</h3>
                 <p className="text-muted-foreground">
-                  123 Avenue Mohammed V<br />
-                  Rabat, 10000<br />
+                avennu zitoune ,<br />
+                  Meknes, 50000<br />
                   Maroc
                 </p>
               </div>
