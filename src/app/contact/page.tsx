@@ -187,7 +187,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="font-medium text-lg mb-2">Email</h3>
-                <p className="text-muted-foreground">contact@femmesingenieurs.ma</p>
+                <p className="text-muted-foreground">dinaennoura28@gmail.com  </p>
               </div>
               <div>
                 <h3 className="font-medium text-lg mb-2">Téléphone</h3>
