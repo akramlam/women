@@ -2525,7 +2525,7 @@ export const fieldsData: Record<string, FieldData> = {
     rankings: [
       {
         rank: 1,
-        school: "École Nationale Supérieure d'Électricité et de Mécanique (ENSEM)",
+        school: "École Nationale Supérieure d'Arts et Métiers (ENSAM)",
         details: "Casablanca - Formation reconnue pour son excellence en génie énergétique et automatisation"
       },
       {
