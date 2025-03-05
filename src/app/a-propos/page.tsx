@@ -56,7 +56,7 @@ export default function AboutPage() {
       </section>
       
       {/* Cards Section - Moved to its own section to fix overlay */}
-      <section className="py-8 bg-background">
+      {/* <section className="py-8 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 -mt-32 md:-mt-24 relative z-20">
             <Card className="bg-card shadow-xl border-0">
@@ -108,7 +108,7 @@ export default function AboutPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
       
       {/* Mission Section - Adjusted for mobile */}
       <section className="py-20 md:py-32 bg-background mt-16 sm:mt-0">
@@ -169,7 +169,7 @@ export default function AboutPage() {
       </section>
       
       {/* Story Section - With timeline */}
-      <section id="notre-histoire" className="py-24 bg-muted/30">
+      {/* <section id="notre-histoire" className="py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -224,7 +224,7 @@ export default function AboutPage() {
       </section>
       
       {/* Values Section - Colorful cards */}
-      <section className="py-24 bg-background">
+      {/* <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -292,10 +292,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       
-      {/* Team Section - Modern cards with hover effects */}
-      <section className="py-24 bg-muted/30">
+      {/* Team Section - Modern cards with hover effects */} 
+      {/* <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -356,7 +356,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       
       {/* CTA Section - Adjusted for mobile */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-primary to-primary/9 text-white">

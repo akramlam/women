@@ -191,7 +191,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="font-medium text-lg mb-2">Téléphone</h3>
-                <p className="text-muted-foreground">+212 5 55 55 55 55</p>
+                <p className="text-muted-foreground">+212 689394728 </p>
               </div>
               <div>
                 <h3 className="font-medium text-lg mb-2">Réseaux sociaux</h3>
